@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="dashboard.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+     <title>Construction Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3081d225ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      #anchor {
+        text-decoration: none;
+        color: #000000;
+      }
+      #anchor:hover {
+        color: #517ae9;
+      }
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+
+      .slider:hover {
+        opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #04aa6d;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #04aa6d;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h3>
+            <a
+              href="/dashboard.html"
+              style="text-decoration: none; color: white"
+              >S2D</a
+            >
+          </h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="dashboard.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div style="margin: auto; margin-top: 5%; width: 80%">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col">Building Name</th>
+            <th scope="col">Builder Name</th>
+            <th scope="col">Location</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+             <td>Regency Estate</td>
+            <td>
+              Mark
+            </td>
+            <td>Thane</td>
+            <td><button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#myModal">
+            View Details
+          </button>
+          <div class="modal" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Regency Estate</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       In order to view the entire details click on request access
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Request Access</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        </td>
+          
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Garden Estate</td>
+            <td>Jacob</td>
+            <td>Dombivili</td>
+            <td><button class="btn btn-success" >
+            View Details
+          </button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Hiranandani</td>
+            <td>Harry</td>
+            <td>Kalyan</td>
+            <td><button class="btn btn-success" >
+            View Details
+          </button></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Dosti Emperia</td>
+            <td>Shobhana</td>
+            <td>Shahad</td>
+            <td><button class="btn btn-success" >
+            View Details
+          </button></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Lodha Heaven</td>
+            <td>Divya</td>
+            <td>Bhandup</td>
+            <td><button class="btn btn-success" >
+            View Details
+          </button></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Marathon Hills</td>
+            <td>Shrinivas</td>
+            <td>Nahur</td>
+            <td><button class="btn btn-success" >
+            View Details
+          </button></td>
+            <tr>
+            <th scope="row">7</th>
+            <td>Nexworld</td>
+            <td>Raheja</td>
+            <td>Ghatkopar</td>
+            <td><button class="btn btn-success" >
+            View Details
+          </button></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Pallava city</td>
+            <td>Rustom</td>
+            <td>Kurla</td>
+            <td><button class="btn btn-success" >
+            View Details
+          </button></td>
+          </tr>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+  </body>
+</html>
